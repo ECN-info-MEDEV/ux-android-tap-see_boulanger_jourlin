@@ -18,6 +18,9 @@
                     "com.example.tapsee.MainActivity" />
         </activity>
         <activity
+            android:name=".Etape5Duree"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

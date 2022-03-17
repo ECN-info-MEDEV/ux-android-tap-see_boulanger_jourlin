@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Tap&amp;See</string>
+    <string name="TitleEtape5">Etape 5/6 : Choix de la durée</string>
+    <string name="SwitchIndifferent">Indifférent</string>
+    <string name="DureeMin">Durée minimale</string>
+    <string name="DureeMax">Durée maximale</string>
+    <string name="ButtonNext">Etape suivante</string>
+    <string name="ButtonBack">Etape précédente</string>
     <string name="txtGestList">Gérer les listes</string>
     <string name="txtGestProfils">Gérer les profils</string>
     <string name="txtTittle"><![CDATA[TAP & SEE]]></string>
