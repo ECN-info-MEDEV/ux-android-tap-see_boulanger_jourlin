@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Etape1Profil">
+    tools:context=".Etape2Genre">
 
     <Button
         android:id="@+id/buttonNext"
@@ -25,7 +25,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/TitleEtape1"
+        android:text="@string/TitleEtape2"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,23 +38,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/ButtonBackMenu"
+        android:onClick="backToMenu"
+        android:text="@string/ButtonBack"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="backToMenu"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/profilSpinner"
-        style="@android:style/Widget.DeviceDefault.DropDownItem.Spinner"
-        android:layout_width="0dp"
+    <SearchView
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
-        android:background="#F1EEEE"
-        android:prompt="@string/promptProfil"
+        android:layout_marginBottom="440dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleChoixGenre" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

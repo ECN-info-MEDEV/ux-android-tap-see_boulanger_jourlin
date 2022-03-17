@@ -31,7 +31,7 @@ public class Etape1Profil extends AppCompatActivity {
     }
 
     public void launchNextStep(View view){
-        Intent intent = new Intent(this, NullActivity.class);
+        Intent intent = new Intent(this, Etape2Genre.class);
         startActivity(intent);
     }
 }

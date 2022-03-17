@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/DureeMax" />
 
     <TextView
-        android:id="@+id/TitleChoixProfil"
+        android:id="@+id/TitleChoixGenre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -53,7 +53,7 @@
         android:showText="false"
         android:text="@string/SwitchIndifferent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleChoixProfil" />
+        app:layout_constraintTop_toBottomOf="@+id/TitleChoixGenre" />
 
     <SeekBar
         android:id="@+id/seekBarDureeMin"
