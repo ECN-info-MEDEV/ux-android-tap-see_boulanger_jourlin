@@ -6,4 +6,8 @@
     <string name="DureeMax">Durée maximale</string>
     <string name="ButtonNext">Etape suivante</string>
     <string name="ButtonBack">Etape précédente</string>
+    <string name="txtGestList">Gérer les listes</string>
+    <string name="txtGestProfils">Gérer les profils</string>
+    <string name="txtTittle"><![CDATA[TAP & SEE]]></string>
+    <string name="txtGestFilms">Gérer les films</string>
 </resources>
