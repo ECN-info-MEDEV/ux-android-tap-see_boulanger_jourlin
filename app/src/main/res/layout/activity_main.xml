@@ -16,7 +16,8 @@
         android:text="@string/txtGestProfils"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonListes" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonListes"
+        android:onClick="launchNullActivity"/>
 
     <Button
         android:id="@+id/buttonListes"
@@ -29,7 +30,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFilm" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonFilm"
+        android:onClick="launchNullActivity"/>
 
     <TextView
         android:id="@+id/text_Title"
@@ -53,5 +55,6 @@
         android:text="@string/txtGestFilms"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_Title" />
+        app:layout_constraintTop_toBottomOf="@+id/text_Title"
+        android:onClick="launchFilmActivity"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
