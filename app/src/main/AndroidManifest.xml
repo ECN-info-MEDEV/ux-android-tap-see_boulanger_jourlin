@@ -9,13 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TapSee">
-        <activity android:name=".NullActivity"
-            android:label = "Null Activity"
+        <activity
+            android:name=".Etape1Profil"
+            android:label="First Activity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.tapsee.MainActivity" />
+                android:value="com.example.tapsee.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NullActivity"
+            android:label="Null Activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapsee.MainActivity" />
         </activity>
         <activity
             android:name=".Etape5Duree"
