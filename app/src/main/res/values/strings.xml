@@ -4,4 +4,6 @@
     <string name="SwitchIndifferent">Indifférent</string>
     <string name="DureeMin">Durée minimale</string>
     <string name="DureeMax">Durée maximale</string>
+    <string name="ButtonNext">Etape suivante</string>
+    <string name="ButtonBack">Etape précédente</string>
 </resources>
