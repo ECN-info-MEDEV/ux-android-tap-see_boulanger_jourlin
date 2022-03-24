@@ -6,15 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".Etape5Duree">
 
+    <TextView
+        android:id="@+id/textShowMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textMax"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarDureeMin" />
+
     <Button
         android:id="@+id/buttonNext"
-        android:layout_width="183dp"
-        android:layout_height="48dp"
+        android:layout_width="141dp"
+        android:layout_height="63dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:text="@string/ButtonNext"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="launchNextActivity"/>
 
     <SeekBar
         android:id="@+id/seekBarDureeMax"
@@ -22,12 +34,14 @@
         android:layout_height="24dp"
         android:layout_marginTop="8dp"
         android:indeterminate="false"
-        android:max="5"
-        android:progress="0"
+        android:max="300"
+        android:progress="120"
+        android:contentDescription="@string/ContentDureeMax"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DureeMax" />
+        app:layout_constraintTop_toBottomOf="@+id/DureeMax"
+        app:labelBehavior="floating"/>
 
     <TextView
         android:id="@+id/TitleChoixDuree"
@@ -49,6 +63,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:checked="false"
         android:minHeight="48dp"
         android:showText="false"
         android:text="@string/SwitchIndifferent"
@@ -60,8 +75,10 @@
         android:layout_width="282dp"
         android:layout_height="24dp"
         android:layout_marginTop="8dp"
+        android:clickable="false"
         android:indeterminate="false"
-        android:max="5"
+        android:longClickable="false"
+        android:max="300"
         android:progress="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,18 +99,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="@string/DureeMax"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBarDureeMin" />
+        app:layout_constraintTop_toBottomOf="@+id/textShowMin" />
 
     <Button
         android:id="@+id/buttonBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="141dp"
+        android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="16dp"
         android:text="@string/ButtonBack"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="launchPreviousActivity"/>
+
+    <TextView
+        android:id="@+id/textShowMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textMax"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarDureeMax" />
 </androidx.constraintlayout.widget.ConstraintLayout>
