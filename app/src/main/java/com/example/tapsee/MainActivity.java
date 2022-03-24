@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
      * Methode lançant l'activité permettant de choisir un film
      */
     public void launchFilmActivity(View view){
-        Intent intent = new Intent(this, Etape5Duree.class);
+        Intent intent = new Intent(this, Etape4Plateforme.class);
         startActivity(intent);
     }
 
