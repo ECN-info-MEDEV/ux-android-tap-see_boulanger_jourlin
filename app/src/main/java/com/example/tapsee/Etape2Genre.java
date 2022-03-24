@@ -181,7 +181,7 @@ public class Etape2Genre extends AppCompatActivity {
                         String searchStr = charSequence.toString().toLowerCase();
                         List<String> resultData = new ArrayList<>();
                         for(String str:strList){
-                            if(str.contains(searchStr) )
+                            if((str.toLowerCase()).contains(searchStr) )
                                 resultData.add(str);
                         }
                         filterResults.count= resultData.size();
