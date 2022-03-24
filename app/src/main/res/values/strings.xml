@@ -48,6 +48,7 @@
     <string name="Real">Nom du réalisateur</string>
     <string name="genre">Genre</string>
     <string name="liste_genres">Liste de genres</string>
+    <string name="rechercheDeFilmHeader">Recherche de film</string>
     <string-array name="profil_array">
         <item>Profil 1</item>
         <item>Profil 2</item>
