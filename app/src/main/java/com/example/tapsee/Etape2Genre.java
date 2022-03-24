@@ -80,7 +80,7 @@ public class Etape2Genre extends AppCompatActivity {
     }
 
     public void launchNextStep(View view){
-        Intent intent = new Intent(this, Etape2Genre.class);
+        Intent intent = new Intent(this, Etape4Plateforme.class);
         Data.genreChoices=customAdapter.getCheckList();
         startActivity(intent);
     }

@@ -30,6 +30,10 @@
     <string name="TitleEtape1">Etape 1/6 : Choix du profil</string>
     <string name="TitleEtape2">Etape 2/6 : Choix du genre</string>
     <string name="promptProfil">Choisissez un profil</string>
+    <string name="TitleEcranFinal">Proposition de films</string>
+    <string name="previous_film">Film précédent</string>
+    <string name="next_film">Film suivant</string>
+    <string name="ok">OK</string>
     <string-array name="profil_array">
         <item>Profil 1</item>
         <item>Profil 2</item>
