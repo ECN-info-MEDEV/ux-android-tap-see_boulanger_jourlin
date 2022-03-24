@@ -119,7 +119,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/listePlateformesFilm2"
+                    android:id="@+id/dureesFilm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -134,7 +134,7 @@
                     android:id="@+id/titleSynopsis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:text="@string/titleSynopsis"
                     android:textStyle="bold" />
 
@@ -142,7 +142,7 @@
                     android:id="@+id/textContenuSynopsis"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:text="@string/testContenusSynopsis" />
             </TableRow>
 

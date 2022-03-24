@@ -31,32 +31,37 @@ public class Etape5Duree extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_etape5_duree);
 
+        //Récupération des éléments de la scène
         this.seekBarDureeMax = (SeekBar) findViewById(R.id.seekBarDureeMax);
         this.seekBarDureeMin = (SeekBar) findViewById(R.id.seekBarDureeMin);
         this.showMax = (TextView) findViewById(R.id.textShowMax);
-        showMax.setText(getTime(seekBarDureeMax));
+        showMax.setText(getTime(seekBarDureeMax.getProgress()));
         this.showMin = (TextView) findViewById(R.id.textShowMin);
-        showMin.setText(getTime(seekBarDureeMin));
+        showMin.setText(getTime(seekBarDureeMin.getProgress()));
         this.switchDuree = (Switch) findViewById(R.id.switchDuree);
         this.nextActivity = (Button) findViewById(R.id.buttonNext);
 
+        //Récupération des dernières données
         this.indifferent = Data.dureeChoice;
         seekBarDureeMax.setEnabled(!indifferent);
         seekBarDureeMin.setEnabled(!indifferent);
+        showMax.setEnabled(!indifferent);
+        showMin.setEnabled(!indifferent);
         this.switchDuree.setChecked(Data.dureeChoice);
         this.nextStepCorrect=true;
         if(Data.dureeMinMaxChoices!=null){
             seekBarDureeMax.setProgress(Data.dureeMinMaxChoices[1]);
-            showMax.setText(getTime(seekBarDureeMax));
+            showMax.setText(getTime(seekBarDureeMax.getProgress()));
             seekBarDureeMin.setProgress(Data.dureeMinMaxChoices[0]);
-            showMin.setText(getTime(seekBarDureeMin));
-
+            showMin.setText(getTime(seekBarDureeMin.getProgress()));
         }
+        compareTimers(); //Verrouiller le bouton Next si les durées ne sont pas possibles
+
         this.seekBarDureeMax.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                showMax.setText(getTime(seekBar));
+                showMax.setText(getTime(seekBar.getProgress()));
                 compareTimers();
             }
 
@@ -75,7 +80,7 @@ public class Etape5Duree extends AppCompatActivity {
 
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                showMin.setText(getTime(seekBar));
+                showMin.setText(getTime(seekBar.getProgress()));
                 compareTimers();
             }
 
@@ -109,9 +114,9 @@ public class Etape5Duree extends AppCompatActivity {
         });
     }
 
-    private String getTime(SeekBar seekBar){
-        int hours = seekBar.getProgress()/60;
-        int min = seekBar.getProgress() - hours*60;
+    public static String getTime(int value){
+        int hours = value/60;
+        int min = value - hours*60;
         String result="";
         if(min<10){
             result = hours + ":0" + min;
