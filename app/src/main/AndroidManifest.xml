@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TapSee">
         <activity
+            android:name=".Etape4Plateforme"
+            android:exported="false" />
+        <activity
             android:name=".Etape2Genre"
             android:label="Recherche de film"
             android:exported="false">

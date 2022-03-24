@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Tap&amp;See</string>
     <string name="TitleEtape5">Etape 5/6 : Choix de la durée</string>
+    <string name="TitleEtape4">Etape 4/6 : Choix de la plateforme</string>
     <string name="SwitchIndifferent">Indifférent</string>
     <string name="DureeMin">Durée minimale</string>
     <string name="DureeMax">Durée maximale</string>
@@ -11,6 +12,21 @@
     <string name="txtGestProfils">Gérer les profils</string>
     <string name="txtTittle"><![CDATA[TAP & SEE]]></string>
     <string name="txtGestFilms">Gérer les films</string>
+    <string name="ContentDureeMax">00:00</string>
+    <string name="textMax">TextView</string>
+    <string name="nouveautes">Nouveautés seulement</string>
+    <string name="plateformes_disponibles">Plateformes disponibles :</string>
+    <string name="checkBoxIndiff">Indifférent</string>
+    <string name="apple_tv">Apple TV +</string>
+    <string name="hulu">Hulu</string>
+    <string name="ocs">OCS</string>
+    <string name="mycanal">MyCANAL</string>
+    <string name="disney">Disney+</string>
+    <string name="amazon_prime_video">Amazon Prime Video</string>
+    <string name="sfr_play_vod">SFR Play VOD</string>
+    <string name="salto">Salto</string>
+    <string name="netflix">Netflix</string>
+
     <string name="TitleEtape1">Etape 1/6 : Choix du profil</string>
     <string name="TitleEtape2">Etape 2/6 : Choix du genre</string>
     <string name="promptProfil">Choisissez un profil</string>
@@ -21,4 +37,5 @@
         <item>Profil 4</item>
         <item>....</item>
     </string-array>
+
 </resources>
