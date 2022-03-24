@@ -66,14 +66,14 @@
             android:layout_height="wrap_content">
 
             <TableRow
-                android:layout_width="379dp"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/titleFilm"
-                    android:layout_width="wrap_content"
+                    android:layout_width="99dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="0dp"
                     android:text="Title"
                     android:textStyle="bold" />
 
@@ -81,19 +81,19 @@
                     android:id="@+id/textTitleFilm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="0dp"
                     android:text="Une merveilleuse proposition" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="15dp">
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/titlePlateforme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:text="Plateformes"
                     android:textStyle="bold" />
 
@@ -101,7 +101,7 @@
                     android:id="@+id/listePlateformesFilm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:text="Liste des plateformes qui proposent le film" />
             </TableRow>
 
@@ -113,7 +113,7 @@
                     android:id="@+id/titleDurees"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:text="Durée du film"
                     android:textStyle="bold" />
 
@@ -121,7 +121,7 @@
                     android:id="@+id/listePlateformesFilm2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:text="Insérer durée" />
             </TableRow>
 
@@ -133,15 +133,15 @@
                     android:id="@+id/titleSynopsis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:text="Synopsis"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textContenuSynopsis"
-                    android:layout_width="322dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:text="Merveilleux synopsis qui fait rêver" />
             </TableRow>
 
@@ -150,19 +150,39 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/titleSynopsis2"
+                    android:id="@+id/titleReal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Synopsis"
+                    android:layout_marginTop="8dp"
+                    android:text="Réalisateur"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/listePlateformesFilm32"
-                    android:layout_width="322dp"
+                    android:id="@+id/nomReal"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Merveilleux synopsis qui fait rêver" />
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du réalisateur" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/titleGenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Genre"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/listeGenres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Liste de genres" />
             </TableRow>
         </TableLayout>
     </ScrollView>
