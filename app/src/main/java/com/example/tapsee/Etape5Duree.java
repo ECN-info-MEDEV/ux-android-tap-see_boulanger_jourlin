@@ -41,10 +41,14 @@ public class Etape5Duree extends AppCompatActivity {
         this.nextActivity = (Button) findViewById(R.id.buttonNext);
 
         this.indifferent = Data.dureeChoice;
+        seekBarDureeMax.setEnabled(indifferent);
+        seekBarDureeMin.setEnabled(indifferent);
+        this.switchDuree.setChecked(Data.dureeChoice);
         this.nextStepCorrect=true;
         if(Data.dureeMinMaxChoices!=null){
             seekBarDureeMax.setProgress(Data.dureeMinMaxChoices[1]);
             seekBarDureeMin.setProgress(Data.dureeMinMaxChoices[0]);
+
         }
         this.seekBarDureeMax.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
@@ -134,6 +138,7 @@ public class Etape5Duree extends AppCompatActivity {
      * Methode retournant à l'activité précédente
      */
     public void launchPreviousActivity(View view){
+        updateData();
         finish();
     }
 
@@ -141,6 +146,7 @@ public class Etape5Duree extends AppCompatActivity {
      * Methode lancant l'activité suivante
      */
     public void launchNextActivity(View view){
+        updateData();
         Intent intent = new Intent(this, NullActivity.class);
         startActivity(intent);
     }
