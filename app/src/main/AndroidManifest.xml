@@ -12,6 +12,15 @@
         <activity
             android:name=".EcranFinal"
             android:exported="false" />
+      <activity
+            android:name=".Etape32_RealActeurs"
+            android:exported="false"
+            android:label="Recherche de film">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapsee.Etape31_RealActeurs" />
+        </activity>
+
         <activity
             android:name=".Etape4Plateforme"
             android:exported="false" />
@@ -23,6 +32,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tapsee.Etape1Profil" />
         </activity>
+
+        <activity
+            android:name=".Etape31_RealActeurs"
+            android:exported="false"
+            android:label="Recherche de film">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapsee.Etape2Genre" />
+        </activity>
+
         <activity
             android:name=".Etape1Profil"
             android:label="Recherche de film"
@@ -41,7 +60,13 @@
         </activity>
         <activity
             android:name=".Etape5Duree"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Recherche de film"
+            android:parentActivityName=".Etape4Plateforme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapsee.MainActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

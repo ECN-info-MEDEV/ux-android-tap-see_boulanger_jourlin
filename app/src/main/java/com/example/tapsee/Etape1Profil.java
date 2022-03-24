@@ -9,12 +9,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 public class Etape1Profil extends AppCompatActivity {
+    Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_etape1_profil);
-        Spinner spinner = (Spinner)findViewById(R.id.profilSpinner);
+        spinner = (Spinner)findViewById(R.id.profilSpinner);
 
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -27,11 +28,20 @@ public class Etape1Profil extends AppCompatActivity {
     }
 
     public void backToMenu(View view){
+        updateData();
         finish();
     }
 
     public void launchNextStep(View view){
+        updateData();
         Intent intent = new Intent(this, Etape2Genre.class);
         startActivity(intent);
+    }
+
+    /**
+     * Update la classe data avec le profil
+     */
+    private void updateData(){
+        Data.profilChoice=spinner.getSelectedItemPosition();
     }
 }

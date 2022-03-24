@@ -19,7 +19,7 @@ public class Etape4Plateforme extends AppCompatActivity {
 
     private boolean isIndiff;
 
-    //private CheckBox nouveautes;
+    private CheckBox nouveautes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class Etape4Plateforme extends AppCompatActivity {
         setContentView(R.layout.activity_etape4_plateforme);
 
         this.indiff = (CheckBox) findViewById(R.id.checkBoxIndifff);
-
+        this.nouveautes= (CheckBox)findViewById(R.id.checkBoxNouveautes);
         this.listVOD = new ArrayList<>();
 
         isIndiff = false;
@@ -41,6 +41,16 @@ public class Etape4Plateforme extends AppCompatActivity {
         this.listVOD.add((CheckBox) findViewById(R.id.checkBoxOCS));
         this.listVOD.add((CheckBox) findViewById(R.id.checkBoxSalto));
         this.listVOD.add((CheckBox) findViewById(R.id.checkBoxSFR));
+        if(Data.platChoices!=null){
+            int i=0;
+            for(CheckBox c : this.listVOD){
+                c.setChecked(Data.platChoices[i]);
+                i++;
+            }
+        }
+        if(Data.newChoice==true){
+            this.nouveautes.setChecked(true);
+        }
 
         this.indiff.setOnClickListener(new CheckBox.OnClickListener(){
 
@@ -59,8 +69,8 @@ public class Etape4Plateforme extends AppCompatActivity {
      * Methode retournant à l'activité précédente
      */
     public void launchPreviousActivity(View view){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        updateData();
+        finish();
     }
 
     /**
@@ -68,6 +78,25 @@ public class Etape4Plateforme extends AppCompatActivity {
      */
     public void launchNextActivity(View view){
         Intent intent = new Intent(this, Etape5Duree.class);
+        updateData();
         startActivity(intent);
+    }
+
+    private void updateData(){
+        Data.newChoice=nouveautes.isChecked();
+        int size=this.listVOD.size();
+        Data.platChoices= new boolean[size];
+        if(this.indiff.isChecked()){
+            for(int i=0;i<size;i++){
+                Data.platChoices[i]=true;
+            }
+        }
+        else{
+            size=0; //On réutilise size comme compteur
+            for(CheckBox c : this.listVOD){
+                Data.platChoices[size]=c.isChecked();
+                size++;
+            }
+        }
     }
 }
