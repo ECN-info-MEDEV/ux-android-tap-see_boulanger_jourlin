@@ -21,15 +21,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class Etape2Genre extends AppCompatActivity {
+public class Etape32_RealActeurs extends AppCompatActivity {
 
     CustomAdapter customAdapter;
     ListView listView;
-    String names[]={"Romance","Comédie","Drame","Enfant","Adulte","Animé","Sombre","Policier","Action","Histoire","Science fiction","Horreur","Fantaisie","Fantastique","Western","Reportage"};
+    String names[]={"Michel","Patrick","Sebastien","Patate","Pierre","Un Petit Acteur","Leblanc", "Un Acteur"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_etape2_genre);
+        setContentView(R.layout.activity_etape32_real_acteurs);
 
         listView = findViewById(R.id.listview);
         List<String > listItems = new ArrayList<>();
@@ -39,8 +39,8 @@ public class Etape2Genre extends AppCompatActivity {
         }
         customAdapter= new CustomAdapter(listItems,this);
 
-        if(Data.genreChoices!=null) {
-            customAdapter.setCheckList(Data.genreChoices);
+        if(Data.actChoices!=null) {
+            customAdapter.setCheckList(Data.actChoices);
         }
 
 
@@ -70,18 +70,18 @@ public class Etape2Genre extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id= item.getItemId();
         if(id==R.id.search_view){
-           return true;
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
     public void backToMenu(View view){
-        Data.genreChoices=customAdapter.getCheckList();
+        Data.actChoices=customAdapter.getCheckList();
         finish();
     }
 
     public void launchNextStep(View view){
-        Intent intent = new Intent(this, Etape31_RealActeurs.class);
-        Data.genreChoices=customAdapter.getCheckList();
+        Intent intent = new Intent(this, Etape4Plateforme.class);
+        Data.actChoices=customAdapter.getCheckList();
         startActivity(intent);
     }
 

@@ -29,6 +29,8 @@
 
     <string name="TitleEtape1">Etape 1/6 : Choix du profil</string>
     <string name="TitleEtape2">Etape 2/6 : Choix du genre</string>
+    <string name="TitleEtape31">Etape 3/6 : Choix du/des réalisateurs</string>
+    <string name="TitleEtape32">Etape 3/6 : Choix du/des acteurs</string>
     <string name="promptProfil">Choisissez un profil</string>
     <string-array name="profil_array">
         <item>Profil 1</item>
