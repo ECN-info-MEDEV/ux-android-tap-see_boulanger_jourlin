@@ -32,6 +32,10 @@
     <string name="TitleEtape31">Etape 3/6 : Choix du/des réalisateurs</string>
     <string name="TitleEtape32">Etape 3/6 : Choix du/des acteurs</string>
     <string name="promptProfil">Choisissez un profil</string>
+    <string name="TitleEcranFinal">Proposition de films</string>
+    <string name="previous_film">Film précédent</string>
+    <string name="next_film">Film suivant</string>
+    <string name="ok">OK</string>
     <string-array name="profil_array">
         <item>Profil 1</item>
         <item>Profil 2</item>

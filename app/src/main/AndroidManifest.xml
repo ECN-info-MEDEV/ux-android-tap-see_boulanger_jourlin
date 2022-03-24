@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TapSee">
         <activity
+            android:name=".EcranFinal"
+            android:exported="false" />
+      <activity
             android:name=".Etape32_RealActeurs"
             android:exported="false"
             android:label="Recherche de film">
@@ -17,6 +20,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tapsee.Etape31_RealActeurs" />
         </activity>
+
         <activity
             android:name=".Etape4Plateforme"
             android:exported="false" />
@@ -28,6 +32,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tapsee.Etape1Profil" />
         </activity>
+
         <activity
             android:name=".Etape31_RealActeurs"
             android:exported="false"
@@ -36,6 +41,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tapsee.Etape2Genre" />
         </activity>
+
         <activity
             android:name=".Etape1Profil"
             android:label="Recherche de film"
