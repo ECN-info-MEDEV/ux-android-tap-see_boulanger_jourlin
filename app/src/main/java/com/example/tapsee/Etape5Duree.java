@@ -40,9 +40,16 @@ public class Etape5Duree extends AppCompatActivity {
         this.switchDuree = (Switch) findViewById(R.id.switchDuree);
         this.nextActivity = (Button) findViewById(R.id.buttonNext);
 
-        this.indifferent = false;
+        this.indifferent = Data.dureeChoice;
+        seekBarDureeMax.setEnabled(indifferent);
+        seekBarDureeMin.setEnabled(indifferent);
+        this.switchDuree.setChecked(Data.dureeChoice);
         this.nextStepCorrect=true;
+        if(Data.dureeMinMaxChoices!=null){
+            seekBarDureeMax.setProgress(Data.dureeMinMaxChoices[1]);
+            seekBarDureeMin.setProgress(Data.dureeMinMaxChoices[0]);
 
+        }
         this.seekBarDureeMax.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             @Override
@@ -131,15 +138,27 @@ public class Etape5Duree extends AppCompatActivity {
      * Methode retournant à l'activité précédente
      */
     public void launchPreviousActivity(View view){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        updateData();
+        finish();
     }
 
     /**
      * Methode lancant l'activité suivante
      */
     public void launchNextActivity(View view){
+        updateData();
         Intent intent = new Intent(this, NullActivity.class);
         startActivity(intent);
+    }
+
+    /**
+     * Méthode permettant de metrte à jour les données dans l'étape 5 (indifférent à la durée et les choix de durée)
+     */
+
+    private void updateData(){
+        Data.dureeChoice=this.indifferent;
+        Data.dureeMinMaxChoices= new int[2];
+        Data.dureeMinMaxChoices[0]=seekBarDureeMin.getProgress();
+        Data.dureeMinMaxChoices[1]=seekBarDureeMax.getProgress();
     }
 }
