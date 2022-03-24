@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void launchFilmActivity(View view){
         Intent intent = new Intent(this, Etape1Profil.class);
+        Data.Reset();
         startActivity(intent);
     }
 

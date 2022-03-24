@@ -11,10 +11,16 @@
         android:theme="@style/Theme.TapSee">
         <activity
             android:name=".Etape2Genre"
-            android:exported="false" />
+            android:label="Recherche de film"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapsee.Etape1Profil" />
+        </activity>
+
         <activity
             android:name=".Etape1Profil"
-            android:label="First Activity"
+            android:label="Recherche de film"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
