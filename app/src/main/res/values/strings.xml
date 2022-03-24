@@ -36,6 +36,18 @@
     <string name="previous_film">Film précédent</string>
     <string name="next_film">Film suivant</string>
     <string name="ok">OK</string>
+    <string name="titlefilm">Title</string>
+    <string name="textTitleFilm">Une merveilleuse proposition</string>
+    <string name="plateformes">Plateformes</string>
+    <string name="listePlateformesFilm">Liste des plateformes qui proposent le film</string>
+    <string name="titleDuree">Durée du film</string>
+    <string name="dureesPossibles">Insérer durée</string>
+    <string name="titleSynopsis">Synopsis</string>
+    <string name="testContenusSynopsis">Merveilleux synopsis qui fait rêver</string>
+    <string name="titleReal">Réalisateur</string>
+    <string name="Real">Nom du réalisateur</string>
+    <string name="genre">Genre</string>
+    <string name="liste_genres">Liste de genres</string>
     <string-array name="profil_array">
         <item>Profil 1</item>
         <item>Profil 2</item>
