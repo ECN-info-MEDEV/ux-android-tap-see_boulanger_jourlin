@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/buttonNext"
-        android:layout_width="183dp"
-        android:layout_height="48dp"
+        android:layout_width="141dp"
+        android:layout_height="63dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:text="@string/ButtonNext"
@@ -34,14 +34,14 @@
 
     <Button
         android:id="@+id/buttonBackMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="141dp"
+        android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="16dp"
+        android:onClick="backToMenu"
         android:text="@string/ButtonBackMenu"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="backToMenu"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/profilSpinner"

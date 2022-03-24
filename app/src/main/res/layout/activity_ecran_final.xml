@@ -28,7 +28,8 @@
         android:text="@string/ok"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="backToMenu" />
 
     <Button
         android:id="@+id/buttonPrecedent"
@@ -74,7 +75,7 @@
                     android:layout_width="99dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
-                    android:text="Title"
+                    android:text="@string/titlefilm"
                     android:textStyle="bold" />
 
                 <TextView
@@ -82,7 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
-                    android:text="Une merveilleuse proposition" />
+                    android:text="@string/textTitleFilm" />
             </TableRow>
 
             <TableRow
@@ -94,7 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Plateformes"
+                    android:text="@string/plateformes"
                     android:textStyle="bold" />
 
                 <TextView
@@ -102,7 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Liste des plateformes qui proposent le film" />
+                    android:text="@string/listePlateformesFilm" />
             </TableRow>
 
             <TableRow
@@ -114,15 +115,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Durée du film"
+                    android:text="@string/titleDuree"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/listePlateformesFilm2"
+                    android:id="@+id/dureesFilm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Insérer durée" />
+                    android:text="@string/dureesPossibles" />
             </TableRow>
 
             <TableRow
@@ -133,16 +134,16 @@
                     android:id="@+id/titleSynopsis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Synopsis"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/titleSynopsis"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textContenuSynopsis"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Merveilleux synopsis qui fait rêver" />
+                    android:layout_marginTop="16dp"
+                    android:text="@string/testContenusSynopsis" />
             </TableRow>
 
             <TableRow
@@ -154,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Réalisateur"
+                    android:text="@string/titleReal"
                     android:textStyle="bold" />
 
                 <TextView
@@ -162,7 +163,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Nom du réalisateur" />
+                    android:text="@string/Real" />
             </TableRow>
 
             <TableRow
@@ -174,7 +175,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Genre"
+                    android:text="@string/genre"
                     android:textStyle="bold" />
 
                 <TextView
@@ -182,7 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Liste de genres" />
+                    android:text="@string/liste_genres" />
             </TableRow>
         </TableLayout>
     </ScrollView>

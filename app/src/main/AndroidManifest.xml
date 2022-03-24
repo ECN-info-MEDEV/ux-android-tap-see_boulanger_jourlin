@@ -11,11 +11,16 @@
         android:theme="@style/Theme.TapSee">
         <activity
             android:name=".EcranFinal"
-            android:exported="false" />
-      <activity
+            android:exported="false"
+            android:label="Proposition de film">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapsee.Etape5Duree" />
+        </activity>
+        <activity
             android:name=".Etape32_RealActeurs"
             android:exported="false"
-            android:label="Recherche de film">
+            android:label="@string/rechercheDeFilmHeader">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tapsee.Etape31_RealActeurs" />
@@ -23,11 +28,16 @@
 
         <activity
             android:name=".Etape4Plateforme"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/rechercheDeFilmHeader">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapsee.Etape32_RealActeurs" />
+        </activity>
         <activity
             android:name=".Etape2Genre"
             android:exported="false"
-            android:label="Recherche de film">
+            android:label="@string/rechercheDeFilmHeader">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tapsee.Etape1Profil" />
@@ -36,7 +46,7 @@
         <activity
             android:name=".Etape31_RealActeurs"
             android:exported="false"
-            android:label="Recherche de film">
+            android:label="@string/rechercheDeFilmHeader">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tapsee.Etape2Genre" />
@@ -44,7 +54,7 @@
 
         <activity
             android:name=".Etape1Profil"
-            android:label="Recherche de film"
+            android:label="@string/rechercheDeFilmHeader"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -61,11 +71,11 @@
         <activity
             android:name=".Etape5Duree"
             android:exported="false"
-            android:label="Recherche de film"
+            android:label="@string/rechercheDeFilmHeader"
             android:parentActivityName=".Etape4Plateforme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.tapsee.MainActivity" />
+                android:value="com.example.tapsee.Etape4Plateforme" />
         </activity>
         <activity
             android:name=".MainActivity"
