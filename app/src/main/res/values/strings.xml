@@ -11,7 +11,7 @@
     <string name="txtGestList">Gérer les listes</string>
     <string name="txtGestProfils">Gérer les profils</string>
     <string name="txtTittle"><![CDATA[TAP & SEE]]></string>
-    <string name="txtGestFilms">Gérer les films</string>
+    <string name="txtGestFilms">Choisir un film</string>
     <string name="ContentDureeMax">00:00</string>
     <string name="textMax">TextView</string>
     <string name="nouveautes">Nouveautés seulement</string>
