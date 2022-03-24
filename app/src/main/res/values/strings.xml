@@ -7,6 +7,7 @@
     <string name="DureeMax">Durée maximale</string>
     <string name="ButtonNext">Etape suivante</string>
     <string name="ButtonBack">Etape précédente</string>
+    <string name="ButtonBackMenu">Retour au menu</string>
     <string name="txtGestList">Gérer les listes</string>
     <string name="txtGestProfils">Gérer les profils</string>
     <string name="txtTittle"><![CDATA[TAP & SEE]]></string>
@@ -25,4 +26,16 @@
     <string name="sfr_play_vod">SFR Play VOD</string>
     <string name="salto">Salto</string>
     <string name="netflix">Netflix</string>
+
+    <string name="TitleEtape1">Etape 1/6 : Choix du profil</string>
+    <string name="TitleEtape2">Etape 2/6 : Choix du genre</string>
+    <string name="promptProfil">Choisissez un profil</string>
+    <string-array name="profil_array">
+        <item>Profil 1</item>
+        <item>Profil 2</item>
+        <item>Profil 3</item>
+        <item>Profil 4</item>
+        <item>....</item>
+    </string-array>
+
 </resources>

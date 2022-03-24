@@ -13,6 +13,23 @@
             android:name=".Etape4Plateforme"
             android:exported="false" />
         <activity
+            android:name=".Etape2Genre"
+            android:label="Recherche de film"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapsee.Etape1Profil" />
+        </activity>
+
+        <activity
+            android:name=".Etape1Profil"
+            android:label="Recherche de film"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapsee.MainActivity" />
+        </activity>
+        <activity
             android:name=".NullActivity"
             android:label="Null Activity"
             android:parentActivityName=".MainActivity">

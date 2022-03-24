@@ -44,7 +44,7 @@
         app:labelBehavior="floating"/>
 
     <TextView
-        android:id="@+id/TitleChoixDuree"
+        android:id="@+id/TitleChoixGenre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -68,7 +68,7 @@
         android:showText="false"
         android:text="@string/SwitchIndifferent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleChoixDuree" />
+        app:layout_constraintTop_toBottomOf="@+id/TitleChoixGenre" />
 
     <SeekBar
         android:id="@+id/seekBarDureeMin"
@@ -105,9 +105,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textShowMin" />
 
     <Button
+
         android:id="@+id/buttonBack"
         android:layout_width="141dp"
         android:layout_height="63dp"
+
         android:layout_marginStart="8dp"
         android:layout_marginBottom="16dp"
         android:text="@string/ButtonBack"
