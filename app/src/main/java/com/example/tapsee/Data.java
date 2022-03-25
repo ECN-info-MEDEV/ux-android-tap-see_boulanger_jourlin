@@ -14,7 +14,8 @@ public class Data {
     public static boolean[] platChoices;
     public static boolean dureeChoice;
     public static int[] dureeMinMaxChoices;
-
+    public static boolean[] excludedChoices;
+    public static boolean[] includedChoices;
     /**
      * Permet de remettre les attributs initiaux
      */
@@ -27,6 +28,8 @@ public class Data {
         platChoices=null;
         dureeChoice=false;
         dureeMinMaxChoices=null;
+        excludedChoices=null;
+        includedChoices=null;
     }
 
 }
