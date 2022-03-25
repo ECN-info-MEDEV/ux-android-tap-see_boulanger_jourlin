@@ -153,7 +153,7 @@ public class Etape5Duree extends AppCompatActivity {
      * Methode lancant l'activité suivante
      */
     public void launchNextActivity(View view){
-        Intent intent = new Intent(this, EcranFinal.class);
+        Intent intent = new Intent(this, Etape6Lists.class);
         updateData();
 
         startActivity(intent);

@@ -30,7 +30,10 @@
     <string name="TitleEtape1">Etape 1/6 : Choix du profil</string>
     <string name="TitleEtape2">Etape 2/6 : Choix du genre</string>
     <string name="TitleEtape31">Etape 3/6 : Choix du/des réalisateurs</string>
+    <string name="subTitleList1">Choisissez les listes à inclure</string>
+    <string name="subTitleList2">Choisissez les listes à exclure</string>
     <string name="TitleEtape32">Etape 3/6 : Choix du/des acteurs</string>
+    <string name="TitleEtape6">Etape 6/6 : Choix des listes</string>
     <string name="promptProfil">Choisissez un profil</string>
     <string name="TitleEcranFinal">Proposition de films</string>
     <string name="previous_film">Film précédent</string>
